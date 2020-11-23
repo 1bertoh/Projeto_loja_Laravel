@@ -1,0 +1,39 @@
+body{
+    background-color: #CEA2FD;
+}
+.navbar .btn {
+    background-color: #C6FCFF;
+    border-radius: 50px;
+}
+.card{
+    background-color:#C6FCFF ;
+}
+.carousel-item .btn, .btn-buy{
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+
+.carousel-arrow span, .dropdown-toggle {
+    background-color: #9900FA ;
+}
+.carousel-arrow ion-icon{
+    color: blueviolet;
+}
+
+.accordion .btn {
+    background-color: rgb(204, 200, 200);
+}
+.accordion .card-body {
+    background-color: white;
+}
+tbody{
+    background-color: aquamarine;
+}
+.dropdown-toggle{
+    background-color: ;
+}
+.pagination li:hover {
+    color: white;
+    
+     box-shadow: 0 0 8px 2px white;
+}
