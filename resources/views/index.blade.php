@@ -5,7 +5,8 @@
     <div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                
+                <div class="carousel-item ">
                     <div class="row">
                         <div class="col card ml-1">
                             <img src="https://picsum.photos/200" class="d-block w-30 card-img-top" alt="...">
@@ -60,6 +61,8 @@
                         </div>
                     </div> 
                 </div>
+
+               
 
                 <div class="carousel-item">
                     <div class="row">

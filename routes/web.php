@@ -3,6 +3,7 @@
 use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +26,4 @@ Route::get('/search', [RouteController::class, 'search'])->name('shopping.search
 Route::get('/signup', [RouteController::class, 'signup'])->name('shopping.signup');
 
 Route::get('/add_product', [RouteController::class, 'add_product'])->name('shopping.add_product');
+Route::post('/add_product', [RouteController::class, 'store_product']);
