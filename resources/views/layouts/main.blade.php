@@ -28,98 +28,102 @@
         </style>
     </head>
     <body class="antialiased">
-        <header>
+        <header> 
             <nav class="navbar navbar-expand-lg navbar-light bg-purple pr-4">
-                <a class="text-white navbar-brand " href="#">
-                    <h2>
-                        <strong class="">Shop</strong>ping
-                    </h2>
-                    
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">hhh</span>
-                </button>
 
-                <div class=" navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="{{ route('shopping.index') }}">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="{{ route('shopping.add_product') }}">Adicionar produtos <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mr-4">    
-                    <form class="form-inline my-5 my-lg-0 ">
-                        <div class="input-group mb-1 ml-3 ">
-                            <input type="text" class="form-control  " placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <a class="input-group-text" id="basic-addon2" href="{{ route('shopping.search') }}">
-                                <ion-icon name="search-outline" ></ion-icon>
-                                </a>
-                            </div>
+                <div class="container-fluid" >
+                    <div class="row" style=" width:100%">
+                        <div  class=" col-lg-2 col-sm col-md-6 col-xs">
+                            <a class="text-white navbar-brand " href="#">
+                                <h2>
+                                    <strong class="">Shop</strong>ping
+                                </h2>
+                            </a>
                         </div>
-                    </form>
-                </div>
-               
-                <div class="d-flex align-content-end">
-                    <ul class="nav ">
-                        <li class="nav-item mx-3">
-                            <div class="btn-toolbar" role="toolbar" aria-label="">
-                                <div class="btn-group" role="group" aria-label="">
-                                    <a type="button" href="{{ route('shopping.carrinho') }}" class="btn  ">
-                                        <ion-icon size="32px" style="font-size:27px;" name="basket-outline"></ion-icon>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                         <!--toggle for login-->
-                        <li class="nav-item">
-                            <div class="btn-toolbar" role="toolbar" aria-label="">
-                                <div class="dropdown">
-                                    <button type="button " class="btn " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <ion-icon  size="32px" style="font-size:27px;" name="person-outline"></ion-icon>
-                                    </button>
-                                   
-
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                        <form class="px-4 py-3">
-                                            <div class="form-group">
-                                                <label for="exampleDropdownFormEmail1">Email address</label>
-                                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleDropdownFormPassword1">Password</label>
-                                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                                    <label class="form-check-label" for="dropdownCheck">
-                                                    Remember me
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="btn" >Sign in</button>
-                                        </form>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="{{ route('shopping.signup') }}">New around here? Sign up</a>
-                                        <a class="dropdown-item" href="#">Forgot password?</a>
+                        <div  class=" col-lg-3 col-sm col-md-6 ">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white" href="{{ route('shopping.index') }}">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-white" href="{{ route('shopping.add_product') }}">Adicionar produtos <span class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div  class=" col-lg-5 col-sm col-md-6 col-xs d-flex justify-content-start" >
+                            <form method="POST" action="/main"  class="form-inline my-5 w-100" >
+                            @csrf
+                                <div class="input-group mb-1  w-100" >
+                                    <input type="text" class="form-control d-block"  placeholder="Search" aria-label="Search" aria-describedby="basic-addon2" name="search">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="input-group-text" id="basic-addon2" >
+                                        <ion-icon name="search-outline" ></ion-icon>
+                                        </button>
                                     </div>
                                 </div>
+                            </form>
+                        </div>
+
+                        <div  class=" col-lg-2 col-sm-12 col-md-6 col-xs d-flex justify-content-end">
+                            <ul class="nav ">
+                                <li class="nav-item mx-3">
+                                    <div class="btn-toolbar" role="toolbar" aria-label="">
+                                        <div class="btn-group" role="group" aria-label="">
+                                            <a type="button" href="{{ route('shopping.carrinho') }}" class="btn  ">
+                                                <ion-icon size="32px" style="font-size:27px;" name="basket-outline"></ion-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
                                 
-                                
-                            </div>
-                        </li>
-                        <!-- end toggle for login-->
-                    </ul>
+                                <!--toggle for login-->
+                                <li class="nav-item">
+                                    <div class="btn-toolbar" role="toolbar" aria-label="">
+                                        <div class="dropdown">
+                                            <button type="button " class="btn " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <ion-icon  size="32px" style="font-size:27px;" name="person-outline"></ion-icon>
+                                            </button>
+                                        
+
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <form class="px-4 py-3">
+                                                    <div class="form-group">
+                                                        <label for="exampleDropdownFormEmail1">Email address</label>
+                                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleDropdownFormPassword1">Password</label>
+                                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                            <label class="form-check-label" for="dropdownCheck">
+                                                            Remember me
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn" >Sign in</button>
+                                                </form>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="{{ route('shopping.signup') }}">New around here? Sign up</a>
+                                                <a class="dropdown-item" href="#">Forgot password?</a>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </li>
+                                <!-- end toggle for login-->
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
             </nav>
         </header>
         <main>
-            <div class="container pt-4">
+            <div class="container-fluid  pt-4">
                     
             @yield('content')
              </div>

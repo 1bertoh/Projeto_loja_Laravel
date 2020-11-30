@@ -3,40 +3,47 @@
 @section('content')
 
 <div>
-    <form action="/add_product">
+
+    <form action="/add_product" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="name">Nome do produto</label>
-            <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
+            <input required type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
             <label for="descricao">Descrição</label>
-            <textarea name="description" id="descricao"></textarea>
+            <textarea required name="description" id="descricao"></textarea>
         </div>
         <div class="form-group">
             <label for="especificacao">Especificações</label>
-            <textarea name="especification" id="especificacao"></textarea>
+            <textarea required name="especification" id="especificacao"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="number">Preço</label>
+          <input required type="number" step="0.01" class="form-control" name="price" id="number" aria-describedby="helpId" placeholder="">
+          <small id="helpId" class="form-text text-muted">Help text</small>
         </div>
 
         <div class="form-group mb-3">
             <label for="upload-img">Imagem do produto</label>
             <div class="custom-file">
-                <input type="file" name="ime" class="custom-file-input" id="upload-img" aria-describedby="inputGroupFileAddon01">
+                <input required type="file" name="image" class="custom-file-input" id="upload-img" aria-describedby="inputGroupFileAddon01">
                 <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
             </div>
 
             <div class="form-group">
                 <label for="category"></label>
-                <select class="form-control" name="category" id="category">
-                    <option value="computer">Computador</option>
-                    <option value="tv">TV</option>
-                    <option value="clothes">Roupas</option>
-                    <option value="accessories">Acessórios</option>
-                    <option value="furniture">Móveis</option>
-                    <option value="liquidificador">Liquidificador</option>
-                    <option value="books">Livros</option>
-                    <option value="toys">Brinquedos</option>
+                <select required class="form-control" name="id_category" id="category">
+                    <option value="1">Computador</option>
+                    <option value="2">TV</option>
+                    <option value="3">Roupas</option>
+                    <option value="4">Acessórios</option>
+                    <option value="5">Móveis</option>
+                    <option value="6">Liquidificador</option>
+                    <option value="7">Livros</option>
+                    <option value="8">Brinquedos</option>
                 </select>
             </div>
         </div>

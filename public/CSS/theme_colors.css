@@ -8,7 +8,7 @@ body{
 .card{
     background-color:#C6FCFF ;
 }
-.carousel-item .btn, .btn-buy{
+.carousel-item .btn, .btn-buy, .btn-search{
     background-color: blueviolet;
     border-radius: 50px;
 }
