@@ -3,7 +3,8 @@
 @section('content')
 
 <div>
-    <form action="/add_product" method="POST">
+
+    <form action="/add_product" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="name">Nome do produto</label>

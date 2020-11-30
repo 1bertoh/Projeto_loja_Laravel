@@ -4,7 +4,6 @@
 
 <div>
     <div class="card" >
-        
         <div class="card-body">
             <div class="row">
                 <h3 class="col-4 card-title">Carrinho 
@@ -25,8 +24,8 @@
                 </div>
             </div>
             
-                <form action="" >
-                    <table class="table  table-striped">
+                <form action="" style="border: 1px solid red">
+                    <table class="table  table-striped" style="border: 1px solid pink; width: 100%">
                         <thead class="thead-dark">
                             <tr class="row">
                                 <th class=" col-1"><input class="form-check-input  ml-5"  type="checkbox" value="" id="defaultCheck1"></th>
@@ -42,14 +41,14 @@
                                     <input class="form-check-input ml-5" type="checkbox" value="" id="defaultCheck1">
                                 </td>
                                 <td class="pl-5 col-8">
-                                <p>
-                                    <img src="https://picsum.photos/200" width="50em" class=" mr-3 " alt="...">
-                                    <span class='h6'>Produto</span>
-                                    
-                                </p>
-                                <p class="text-truncate" style="max-width: 50em;">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est officiis blanditiis libero quibusdam vero. Obcaecati ad quia eos facere delectus recusandae ut. Facilis commodi amet accusamus quod nihil, cum veritatis?
-                                </p>
+                                    <p>
+                                        <img src="https://picsum.photos/200" width="50em" class=" mr-3 " alt="...">
+                                        <span class='h6'>Produto</span>
+                                        
+                                    </p>
+                                    <p class="text-truncate col-8" style="width:250px">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est officiis blanditiis libero quibusdam vero. Obcaecati ad quia eos facere delectus recusandae ut. Facilis commodi amet accusamus quod nihil, cum veritatis?
+                                    </p>
  
                                 </td>
                                 <td class="col-3">
@@ -68,7 +67,7 @@
                                    <span class='h6'>Produto</span>
                                    
                                 </p>
-                                <p class="text-truncate" style="max-width: 50em;">
+                                <p class="text-truncate" style="width:250px">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est officiis blanditiis libero quibusdam vero. Obcaecati ad quia eos facere delectus recusandae ut. Facilis commodi amet accusamus quod nihil, cum veritatis?
                                 </p>
                                 
@@ -88,7 +87,7 @@
                                    <span class='h6'>Produto</span>
                                    
                                 </p>
-                                <p class="text-truncate" style="max-width: 50em;">
+                                <p class="text-truncate" style="width:250px">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est officiis blanditiis libero quibusdam vero. Obcaecati ad quia eos facere delectus recusandae ut. Facilis commodi amet accusamus quod nihil, cum veritatis?
                                 </p>
                                 
